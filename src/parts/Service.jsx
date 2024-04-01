@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Service({ data }) {
   return (
     <div className="bg-gray-50">
-      <div className="container pt-20 mx-auto pb-28">
+      <div className="container pt-20 mx-5 pb-28">
         <motion.div
           initial={{
             opacity: 0,
