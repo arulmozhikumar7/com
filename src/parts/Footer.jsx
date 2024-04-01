@@ -58,22 +58,8 @@ export default function Footer() {
         </div>
         <div className="flex-col text-center mt-7">
           <p className="text-lg font-light text-gray-400">
-            Copyright 2021 - All rights reserved - Racxstudio
+            Copyright 2021 - All rights reserved - VG Tech
           </p>
-          <div className="flex-row">
-            <p className="inline-block text-lg font-light text-gray-400">
-              Made with &#x2764; by&nbsp;
-            </p>
-            <Button
-              href="https://github.com/racmathafidz"
-              type="link"
-              target="_blank"
-              className="text-lg font-light text-theme-purple"
-              isExternal
-            >
-              Racmat Hafidz Fadli
-            </Button>
-          </div>
         </div>
       </div>
     </div>
