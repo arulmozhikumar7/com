@@ -17,8 +17,8 @@ const data = [
 const Service = () => {
   return (
     <div className="bg-base-200">
-      <div className="container pt-20 mx-auto pb-28">
-        <h1 className="text-5xl font-bold text-center text-theme-blue">
+      <div className="container px-6 pt-20 mx-auto pb-28 md:px-0">
+        <h1 className="text-5xl font-bold text-center text-theme-blue ">
           Our Service
         </h1>
 

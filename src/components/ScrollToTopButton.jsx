@@ -28,7 +28,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 btn btn-primary text-white px-3 py-3 rounded-full flex items-center justify-center opacity-50 ${
+      className={`fixed bottom-4 right-4 btn btn-primary text-white px-3 py-3 rounded-lg flex items-center justify-center opacity-30 ${
         isVisible ? "block" : "hidden"
       }`}
     >

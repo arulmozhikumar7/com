@@ -45,8 +45,7 @@ const Hero = () => {
             viewport={{ once: true }}
           >
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium ">
-              {Data.header1}
-              <br class="hidden lg:inline-block" />
+              {Data.header1} <br class="hidden lg:inline-block" />
               {Data.header2}
             </h1>
             <p class="mb-8 leading-relaxed">{Data.para}</p>
