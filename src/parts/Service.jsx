@@ -17,13 +17,7 @@ export default function Service({ data }) {
         <div className="grid grid-rows-3 gap-8 px-10 sm:grid-cols-3 sm:grid-rows-1 sm:gap-6 xl:gap-16">
           {data.map((item, index) => (
             <div>
-              <Fade
-                direction="up"
-                triggerOnce
-                delay={100}
-                stagger={100}
-                cascade={true}
-              >
+              <Fade cascade>
                 <div
                   className="transition duration-500 transform bg-white border shadow-2xl group rounded-2xl border-light-theme-purple hover:scale-105"
                   key={index}
