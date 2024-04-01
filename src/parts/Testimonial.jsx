@@ -5,10 +5,25 @@ import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
-
+import { motion } from "framer-motion";
 export default function Testimonial({ data }) {
   return (
-    <section className="container mx-auto">
+    <motion.div
+      initial={{
+        opacity: 0,
+
+        y: 100,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.5,
+        },
+      }}
+      viewport={{ once: true }}
+      className="container mx-auto"
+    >
       <h1 className="text-5xl font-bold text-center text-theme-blue">
         Testimonials
       </h1>
@@ -44,6 +59,6 @@ export default function Testimonial({ data }) {
           </SplideSlide>
         ))}
       </Splide>
-    </section>
+    </motion.div>
   );
 }

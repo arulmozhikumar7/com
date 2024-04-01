@@ -7,8 +7,8 @@ export default function BrandIcon() {
   return (
     <Button className="" type="link" href="/">
       <p className="text-4xl text-theme-blue">
-        Racx
-        <span className="text-theme-purple">studio</span>
+        VG
+        <span className="text-theme-purple">Tech</span>
       </p>
     </Button>
   );

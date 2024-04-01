@@ -2,13 +2,28 @@
 import React from "react";
 
 import Button from "@elements/button";
-import { Fade, Slide } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 import BuildWebsite from "@assets/images/Startup.png";
 
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="w-full mt-8 lg:w-1/2 xl:pl-12 sm:pr-2">
+      <motion.div
+        initial={{
+          opacity: 0,
+
+          y: 100,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+        className="w-full mt-8 lg:w-1/2 xl:pl-12 sm:pr-2"
+      >
         <h1 className="mb-5 text-5xl font-bold leading-tight sm:text-6xl text-theme-blue">
           Growing Your Business <br />
           Is Our Calling
@@ -40,11 +55,26 @@ export default function Hero() {
             />
           </svg>
         </Button>
-      </div>
+      </motion.div>
 
-      <div className="flex items-center justify-center order-first w-full pt-5 md:w-full lg:order-last lg:w-1/2">
+      <motion.div
+        initial={{
+          opacity: 0,
+
+          y: 100,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+        className="flex items-center justify-center order-first w-full pt-5 md:w-full lg:order-last lg:w-1/2"
+      >
         <img className="" src={BuildWebsite} alt="Build Website" />
-      </div>
+      </motion.div>
     </section>
   );
 }

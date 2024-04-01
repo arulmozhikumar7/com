@@ -5,7 +5,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prop-types */
 import React from "react";
-
+import { motion } from "framer-motion";
 import * as emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -54,7 +54,22 @@ export default function DiscussForm(props) {
   };
 
   return (
-    <section className="container flex flex-col justify-center mx-auto mt-10">
+    <motion.div
+      initial={{
+        opacity: 0,
+
+        y: 100,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.5,
+        },
+      }}
+      viewport={{ once: true }}
+      className="container flex flex-col justify-center mx-auto mt-10"
+    >
       <h1 className="text-5xl font-bold text-center text-theme-blue">
         Lets Discuss
       </h1>
@@ -130,6 +145,6 @@ export default function DiscussForm(props) {
       </div>
 
       <ToastContainer />
-    </section>
+    </motion.div>
   );
 }
