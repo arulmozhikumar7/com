@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { motion } from "framer-motion";
+import "./AllTeam.css";
 export default function AllTeam({ data }) {
   return (
     <section className="container mx-0 sm:mx-auto">
@@ -21,21 +22,37 @@ export default function AllTeam({ data }) {
               },
             }}
             viewport={{ once: true }}
+            className="flip-card "
           >
-            <div className="flex flex-col justify-center transition duration-500 transform border shadow-xl w-44 h-60 sm:w-56 sm:h-72 rounded-xl border-light-theme-purple hover:scale-105">
-              <div className="flex justify-center xl:mb-5">
-                <img
-                  src={item.imageUrl}
-                  alt="Team Member"
-                  className="flex w-32 h-32 rounded-full"
-                />
+            <div className="flex flex-col justify-center transition duration-500 transform border shadow-xl flip-card-inner w-44 h-60 sm:w-56 sm:h-72 rounded-xl border-light-theme-purple hover:scale-105">
+              <div className="flex flex-col justify-center flip-card-front">
+                {" "}
+                <div className="flex justify-center xl:mb-5">
+                  <img
+                    src={item.imageUrl}
+                    alt="Team Member"
+                    className="flex w-32 h-32 rounded-full"
+                  />
+                </div>
+                <h2 className="text-xl text-center text-theme-blue">
+                  {item.name}
+                </h2>
+                <p className="mb-3 font-light text-center text-gray-400">
+                  {item.position}
+                </p>
               </div>
-              <h2 className="text-xl text-center text-theme-blue">
-                {item.name}
-              </h2>
-              <p className="mb-3 font-light text-center text-gray-400">
-                {item.position}
-              </p>
+              <div className="flex flex-col justify-center text-center text-black flip-card-back">
+                <h1>{item.name}</h1>
+                <p>{item.position}</p>
+                <div className="mt-2">
+                  <h3 className="font-semibold">Skills:</h3>
+                  <ul className="flex-col items-center justify-center ">
+                    {item.description.skills.map((skill, index) => (
+                      <li key={index}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </motion.div>
         ))}

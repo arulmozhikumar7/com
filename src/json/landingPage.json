@@ -137,62 +137,56 @@
     {
       "name": "Rach David",
       "position": "CEO",
-      "imageUrl": "assets/images/CEO.jpg"
+      "imageUrl": "assets/images/CEO.jpg",
+      "description": {
+        "skills": [
+          "Leadership",
+          "Strategic Planning",
+          "Team Management",
+          "Business Development"
+        ]
+      }
     },
     {
       "name": "Pauline Sydney",
       "position": "HRD",
-      "imageUrl": "assets/images/HRD.jpg"
-    },
-    {
-      "name": "Granger Watterson",
-      "position": "Finance",
-      "imageUrl": "assets/images/Finance.jpg"
-    },
-    {
-      "name": "Tom Jimmy",
-      "position": "Project Manager",
-      "imageUrl": "assets/images/Project-manager.jpg"
+      "imageUrl": "assets/images/HRD.jpg",
+      "description": {
+        "skills": [
+          "Employee Relations",
+          "Recruitment",
+          "Training & Development",
+          "Performance Management"
+        ]
+      }
     },
     {
       "name": "Jim Hendrix",
       "position": "Front-end Developer",
-      "imageUrl": "assets/images/Frontend1.jpg"
-    },
-    {
-      "name": "Calvin Max",
-      "position": "Front-end Developer",
-      "imageUrl": "assets/images/Frontend2.jpg"
+      "imageUrl": "assets/images/Frontend1.jpg",
+      "description": {
+        "skills": ["HTML", "CSS", "JavaScript", "React.js", "Responsive Design"]
+      }
     },
     {
       "name": "Hawkins Jim",
       "position": "Back-end Developer",
-      "imageUrl": "assets/images/Backend1.jpg"
-    },
+      "imageUrl": "assets/images/Backend1.jpg",
+      "description": {
+        "skills": [
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "RESTful APIs",
+          "Database Management"
+        ]
+      }
+    }
+  ],
+  "about": [
     {
-      "name": "Don Bizaro",
-      "position": "Back-end Developer",
-      "imageUrl": "assets/images/Backend2.jpg"
-    },
-    {
-      "name": "Bill Markinson",
-      "position": "Mobile Developer",
-      "imageUrl": "assets/images/Mobile1.jpg"
-    },
-    {
-      "name": "Igor Kavarov",
-      "position": "Mobile Developer",
-      "imageUrl": "assets/images/Mobile2.jpg"
-    },
-    {
-      "name": "Freddie Curl",
-      "position": "UI/UX Designer",
-      "imageUrl": "assets/images/UIUX2.jpg"
-    },
-    {
-      "name": "Monica Lovegood",
-      "position": "UI/UX Designer",
-      "imageUrl": "assets/images/UIUX1.jpg"
+      "title": "About Us",
+      "description": " About VG Tech is located in Chennai City of India. Specifically, We are a bunch of folks who believe in the idea of evocative storytelling. And also, Our team uses the visual medium to create lasting impressions. With no detail too small, no challenge too big and we truly believe in the marriage of production and design."
     }
   ]
 }

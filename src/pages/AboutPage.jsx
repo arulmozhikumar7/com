@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useEffect } from "react";
 
 import Header from "@parts/Header";
@@ -9,7 +7,7 @@ import Footer from "@parts/Footer";
 
 import Data from "@json/landingPage.json";
 
-const TeamPage = (props) => {
+const AboutPage = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -17,11 +15,11 @@ const TeamPage = (props) => {
   return (
     <>
       <Header {...props} />
-      <HeroTeam {...props} />
+      <HeroTeam data={Data.about} />
       <AllTeam data={Data.team} />
       <Footer />
     </>
   );
 };
 
-export default TeamPage;
+export default AboutPage;

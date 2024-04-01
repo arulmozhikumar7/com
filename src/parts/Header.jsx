@@ -54,7 +54,7 @@ export default function Header({ ...props }) {
               path === "/" ? "active-link" : ""
             } text-lg px-5 no-underline hover:underline`}
             type="link"
-            href=""
+            href="/"
           >
             Home
           </Button>
@@ -62,12 +62,12 @@ export default function Header({ ...props }) {
         <li className="py-2 lg:py-0">
           <Button
             className={`${
-              path === "/team" ? "active-link" : ""
+              path === "/about-us" ? "active-link" : ""
             } text-lg px-5 no-underline hover:underline`}
             type="link"
-            href="/team"
+            href="/about-us"
           >
-            Team
+            About Us
           </Button>
         </li>
         <li className="py-2 lg:py-0">
@@ -116,12 +116,12 @@ export default function Header({ ...props }) {
           <li className="py-2 bg-white">
             <Button
               className={`${
-                path === "/team" ? "active-link" : ""
+                path === "/about-us" ? "active-link" : ""
               } px-10 no-underline hover:underline`}
               type="link"
-              href="/team"
+              href="/about-us"
             >
-              Team
+              About Us
             </Button>
           </li>
           <li className="py-2 bg-white">

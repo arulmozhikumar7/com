@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LandingPage from "@pages/LandingPage";
 import ProjectPage from "@pages/ProjectPage";
 import ProjectDetailPage from "@pages/ProjectDetailPage";
-import TeamPage from "@pages/TeamPage";
+import AboutPage from "@pages/AboutPage";
 import DiscussProjectPage from "@pages/DiscussProjectPage";
 import NotFoundPage from "@pages/NotFoundPage";
 
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/project" element={<ProjectPage />} />
         <Route exact path="/project/:id" element={<ProjectDetailPage />} />
-        <Route exact path="/team" element={<TeamPage />} />
+        <Route exact path="/about-us" element={<AboutPage />} />
         <Route exact path="/discuss-project" element={<DiscussProjectPage />} />
         <Route path="" element={<NotFoundPage />} />
       </Routes>
