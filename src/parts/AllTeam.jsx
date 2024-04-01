@@ -41,14 +41,16 @@ export default function AllTeam({ data }) {
                   {item.position}
                 </p>
               </div>
-              <div className="flex flex-col justify-center text-center text-black flip-card-back">
-                <h1>{item.name}</h1>
-                <p>{item.position}</p>
-                <div className="mt-2">
-                  <h3 className="font-semibold">Skills:</h3>
-                  <ul className="flex-col items-center justify-center ">
+              <div className="flex flex-col py-6 text-center text-black r flip-card-back">
+                <h1 className="text-theme-blue">{item.name}</h1>
+                <p className="text-gray-400">{item.position}</p>
+                <div className="flex-col items-center mt-6 ml-6 text-left">
+                  <h3 className="font-semibold ">Skills:</h3>
+                  <ul className="flex-col items-center justify-center ml-3 text-left">
                     {item.description.skills.map((skill, index) => (
-                      <li key={index}>{skill}</li>
+                      <li key={index} className="text-gray-800">
+                        {skill}
+                      </li>
                     ))}
                   </ul>
                 </div>

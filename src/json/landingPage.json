@@ -135,16 +135,11 @@
   ],
   "team": [
     {
-      "name": "Rach David",
-      "position": "CEO",
-      "imageUrl": "assets/images/CEO.jpg",
+      "name": "Monica Lovegood",
+      "position": "UI/UX Designer",
+      "imageUrl": "assets/images/UIUX1.jpg",
       "description": {
-        "skills": [
-          "Leadership",
-          "Strategic Planning",
-          "Team Management",
-          "Business Development"
-        ]
+        "skills": ["UI/UX Design", "Prototyping", "Adobe XD"]
       }
     },
     {
