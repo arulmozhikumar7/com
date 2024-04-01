@@ -25,7 +25,7 @@ export default function Service({ data }) {
           <h1 className="text-5xl font-bold text-center text-theme-blue">
             Our Service
           </h1>
-          <p className="mx-3 mb-12 text-lg font-light text-center text-gray-400">
+          <p className="mx-3 mb-12 text-lg font-light text-center text-gray-400 md:mx-auto">
             We are ready to scale up your business with our great service.
           </p>
         </motion.div>

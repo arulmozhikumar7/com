@@ -4,7 +4,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Button from "@elements/button";
-import { motion } from "framer-motion";
 export default function Portfolio({ data }) {
   return (
     <section className="container flex flex-col items-center mx-auto mt-20">
@@ -12,7 +11,7 @@ export default function Portfolio({ data }) {
         <h1 className="text-5xl font-bold text-center text-theme-blue">
           Our Selected Project
         </h1>
-        <p className="mb-12 text-lg font-light text-center text-gray-400">
+        <p className="mx-3 mb-12 text-lg font-light text-center text-gray-400 md:mx-auto">
           We are ready to scale up your business with our great work result.
         </p>
       </div>
