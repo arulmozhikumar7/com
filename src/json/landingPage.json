@@ -147,12 +147,7 @@
       "position": "HRD",
       "imageUrl": "assets/images/HRD.jpg",
       "description": {
-        "skills": [
-          "Employee Relations",
-          "Recruitment",
-          "Training & Development",
-          "Performance Management"
-        ]
+        "skills": ["Employee Relations", "Recruitment", "Training "]
       }
     },
     {
@@ -160,7 +155,7 @@
       "position": "Front-end Developer",
       "imageUrl": "assets/images/Frontend1.jpg",
       "description": {
-        "skills": ["HTML", "CSS", "JavaScript", "React.js", "Responsive Design"]
+        "skills": ["HTML", "CSS", "JavaScript", "React.js"]
       }
     },
     {
@@ -168,13 +163,7 @@
       "position": "Back-end Developer",
       "imageUrl": "assets/images/Backend1.jpg",
       "description": {
-        "skills": [
-          "Node.js",
-          "Express.js",
-          "MongoDB",
-          "RESTful APIs",
-          "Database Management"
-        ]
+        "skills": ["Node.js", "Express.js", "MongoDB", "DBMS"]
       }
     }
   ],

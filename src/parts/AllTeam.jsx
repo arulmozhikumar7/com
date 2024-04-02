@@ -48,7 +48,10 @@ export default function AllTeam({ data }) {
                   <h3 className="font-semibold ">Skills:</h3>
                   <ul className="flex-col items-center justify-center ml-3 text-left">
                     {item.description.skills.map((skill, index) => (
-                      <li key={index} className="text-gray-800">
+                      <li
+                        key={index}
+                        className="text-gray-800 sm:text-sm md:text-lg"
+                      >
                         {skill}
                       </li>
                     ))}
