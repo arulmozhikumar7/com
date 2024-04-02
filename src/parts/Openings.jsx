@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-// Modal component
-const Modal = ({ onClose }) => {
+const Modal = ({ onClose, data }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="relative max-w-xl p-8 mx-5 bg-white rounded-lg">
@@ -23,21 +22,11 @@ const Modal = ({ onClose }) => {
         </div>
         <h2 className="mb-4 text-2xl font-bold">Job Description</h2>
         <ul className="pl-6 mb-4 list-disc">
-          <li>Develop new components based on design specs.</li>
-          <li>Work independently and write maintainable code.</li>
-          <li>
-            Understand existing code and suggest optimization in terms of
-            functionality and performance.
-          </li>
-          <li>
-            Work on client frameworks for caching and develop reusable
-            components.
-          </li>
+          {data.description.map((desc, index) => (
+            <li key={index}>{desc}</li>
+          ))}
         </ul>
-        <p className="mb-4 text-sm text-gray-500">
-          Please note that we have requirements for this role in Chennai, Salem,
-          Coimbatore, Tirunelveli, and Madurai.
-        </p>
+        <p className="mb-4 text-sm text-gray-500">{data.note}</p>
 
         <button
           onClick={onClose}
@@ -50,16 +39,15 @@ const Modal = ({ onClose }) => {
   );
 };
 
-// Your main component
 const Openings = ({ data }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [openModalIndex, setOpenModalIndex] = useState(null);
 
-  const openModal = () => {
-    setIsModalOpen(true);
+  const openModal = (index) => {
+    setOpenModalIndex(index);
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setOpenModalIndex(null);
   };
 
   return (
@@ -84,7 +72,7 @@ const Openings = ({ data }) => {
                   {item.title}
                 </h2>
                 <button
-                  onClick={openModal}
+                  onClick={() => openModal(index)}
                   className="w-full h-16 text-white bg-theme-purple rounded-b-2xl hover:bg-dark-theme-purple"
                 >
                   Apply
@@ -93,7 +81,9 @@ const Openings = ({ data }) => {
             </div>
           ))}
         </div>
-        {isModalOpen && <Modal onClose={closeModal} />}
+        {openModalIndex !== null && (
+          <Modal onClose={closeModal} data={data[openModalIndex]} />
+        )}
       </div>
     </div>
   );

@@ -178,5 +178,41 @@
       "title": "Our Careers",
       "description": "We know that finding a meaningful and rewarding career can be a long journey. Our goal is to make that process easy for you and to create a work environment that's enriching—one that you'll look forward to every day."
     }
+  ],
+  "Openings": [
+    {
+      "title": "Web Developer",
+      "imageUrl": "assets/images/Web.png",
+
+      "description": [
+        "Develop new components based on design specs.",
+        "Work independently and write maintainable code.",
+        "Understand existing code and suggest optimization in terms of functionality and performance.",
+        "Work on client frameworks for caching and develop reusable components."
+      ],
+      "note": " Please note that we have requirements for this role in Chennai, Salem, Coimbatore, Tirunelveli, and Madurai."
+    },
+    {
+      "title": "App Developer",
+      "imageUrl": "assets/images/Mobile.png",
+      "description": [
+        "Design and develop mobile applications for iOS and Android platforms .",
+        "Collaborate with cross-functional teams to define, design, and ship new features.",
+        "Write clean, maintainable, and efficient code.",
+        "Optimize applications for maximum performance and scalability."
+      ],
+      "note": " Please note that we have requirements for this role in Chennai, Salem, Coimbatore, Tirunelveli, and Madurai."
+    },
+    {
+      "title": "Digital Marketer",
+      "imageUrl": "assets/images/marketing.jpg",
+      "description": [
+        "Develop and execute digital marketing strategies to drive online traffic to the company website and generate leads.",
+        "Manage and optimize digital advertising campaigns across various platforms such as Google Ads, Facebook Ads, LinkedIn Ads, etc.",
+        "Conduct keyword research and optimize website content for search engine optimization (SEO).",
+        "Create engaging content for social media platforms to increase brand awareness and engagement."
+      ],
+      "note": " Please note that we have requirements for this role in Chennai, Salem, Coimbatore, Tirunelveli, and Madurai."
+    }
   ]
 }

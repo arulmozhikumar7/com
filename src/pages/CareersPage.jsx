@@ -14,7 +14,7 @@ const CareersPage = (props) => {
     <>
       <Header {...props} />
       <HeroCareer data={Data.careers} />
-      <Openings data={Data.service} />
+      <Openings data={Data.Openings} />
       <Footer />
     </>
   );

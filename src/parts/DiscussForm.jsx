@@ -75,7 +75,6 @@ export default function DiscussForm(props) {
       </h1>
 
       <p className="mb-12 text-lg font-light text-center text-gray-400">
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
         Please fill out the form below to discuss your project and we'll get
         back to you in less than 24 hours.
       </p>
@@ -136,7 +135,7 @@ export default function DiscussForm(props) {
         </div>
 
         <Button
-          className="px-12 py-3 mx-auto mt-5 text-xl text-white transition duration-200 border-2 border-purple-800 rounded-full bg-theme-purple border-theme-purple hover:bg-dark-theme-purple focus:outline-none"
+          className="px-12 py-3 mx-auto mt-5 text-xl text-white transition duration-200 border-2 rounded-full bg-theme-purple border-theme-purple hover:bg-dark-theme-purple focus:outline-none"
           type="button"
           onClick={submitEmail}
         >
