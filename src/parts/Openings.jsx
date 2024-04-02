@@ -48,7 +48,7 @@ const Modal = ({ onClose, data }) => {
         </div>
         {showForm ? (
           <form onSubmit={handleSubmit}>
-            <h2 className="mb-4 text-2xl font-bold">Apply Now</h2>
+            <h2 className="my-4 mb-4 text-2xl font-bold">Apply Now</h2>
             <div className="grid grid-cols-1 gap-4 mb-4 sm:grid-cols-2">
               <input
                 type="text"
