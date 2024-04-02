@@ -172,5 +172,11 @@
       "title": "About Us",
       "description": " About VG Tech is located in Chennai City of India. Specifically, We are a bunch of folks who believe in the idea of evocative storytelling. And also, Our team uses the visual medium to create lasting impressions. With no detail too small, no challenge too big and we truly believe in the marriage of production and design."
     }
+  ],
+  "careers": [
+    {
+      "title": "Our Careers",
+      "description": "We know that finding a meaningful and rewarding career can be a long journey. Our goal is to make that process easy for you and to create a work environment that's enriching—one that you'll look forward to every day."
+    }
   ]
 }
