@@ -73,6 +73,17 @@ export default function Header({ ...props }) {
         <li className="py-2 lg:py-0">
           <Button
             className={`${
+              path === "/careers" ? "active-link" : ""
+            } text-lg px-5 no-underline hover:underline`}
+            type="link"
+            href="/careers"
+          >
+            Careers
+          </Button>
+        </li>
+        <li className="py-2 lg:py-0">
+          <Button
+            className={`${
               path === "/project" ? "active-link" : ""
             } text-lg px-5 no-underline hover:underline`}
             type="link"
@@ -122,6 +133,17 @@ export default function Header({ ...props }) {
               href="/about-us"
             >
               About Us
+            </Button>
+          </li>
+          <li className="py-2 bg-white">
+            <Button
+              className={`${
+                path === "/careers" ? "active-link" : ""
+              } px-10 no-underline hover:underline`}
+              type="link"
+              href="/careers"
+            >
+              Careers
             </Button>
           </li>
           <li className="py-2 bg-white">
