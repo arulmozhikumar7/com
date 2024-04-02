@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import Header from "@parts/Header";
 import HeroCareer from "@parts/HeroCareer";
@@ -9,11 +9,7 @@ import Data from "@json/landingPage.json";
 
 import Openings from "@parts/Openings";
 
-const AboutPage = (props) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+const CareersPage = (props) => {
   return (
     <>
       <Header {...props} />
@@ -24,4 +20,4 @@ const AboutPage = (props) => {
   );
 };
 
-export default AboutPage;
+export default CareersPage;

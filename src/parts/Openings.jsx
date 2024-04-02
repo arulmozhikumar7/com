@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Modal = ({ onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="relative max-w-xl p-8 bg-white rounded-lg">
+      <div className="relative max-w-xl p-8 mx-5 bg-white rounded-lg">
         <div onClick={onClose}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,10 +38,10 @@ const Modal = ({ onClose }) => {
           Please note that we have requirements for this role in Chennai, Salem,
           Coimbatore, Tirunelveli, and Madurai.
         </p>
-        {/* Add your apply button or form here */}
+
         <button
           onClick={onClose}
-          className="block w-full h-12 text-center text-white bg-blue-500 rounded hover:bg-blue-600"
+          className="block w-full h-12 text-center text-white rounded bg-theme-purple hover:bg-dark-theme-purple"
         >
           Apply Now
         </button>

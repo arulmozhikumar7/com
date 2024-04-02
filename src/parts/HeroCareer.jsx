@@ -1,8 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
-import Button from "@elements/button";
-
 export default function HeroCareer({ data }) {
   return (
     <>
@@ -14,27 +12,6 @@ export default function HeroCareer({ data }) {
           <p className="text-xl font-light leading-relaxed text-gray-400">
             {data[0].description}
           </p>
-          <Button
-            href="/project"
-            type="link"
-            className="flex items-center w-[90%] md:w-[80%] py-5 mt-2 text-sm md:text-xl text-white transition duration-200 rounded-lg shadow-2xl h-18 px-14 bg-theme-purple hover:bg-dark-theme-purple"
-          >
-            View Open Roles
-            <svg
-              className="ml-2 text-white w-7 h-7 animate-bounce-x"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </Button>
         </div>
         <div className="w-full sm:w-1/2 sm:pr-12">
           <img src="/assets/images/career.jpg" alt="Hero" />
