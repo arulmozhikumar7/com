@@ -30,7 +30,7 @@ const Modal = ({ onClose, data }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50">
       <div className="relative max-w-xl p-8 mx-5 overflow-y-auto bg-white rounded-lg md:max-h-full">
-        <div onClick={onClose} className="absolute top-2 right-2">
+        <div onClick={onClose} className="absolute top-4 md:top-2 right-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
