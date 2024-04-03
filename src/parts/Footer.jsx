@@ -18,17 +18,15 @@ export default function Footer() {
           </div>
           <div className="w-1/3 mt-0 ml-16 mr-0 sm:ml-0 sm:mr-5">
             <h1 className="pt-4 pb-2 text-lg text-theme-blue">Office</h1>
+
             <p className="text-lg font-light text-gray-400">
-              rac.hafidz@gmail.com
-            </p>
-            <p className="text-lg font-light text-gray-400">
-              Klaten, Central Java, Indonesia
+              VG Tech 10A, Pillaiyar Koil Street, Mannurpet, Chennai-600050
             </p>
           </div>
           <div className="w-1/3 mt-0 ml-16 sm:ml-0">
             <h1 className="pt-4 pb-2 text-lg text-theme-blue">Social</h1>
             <Button
-              href="https://www.instagram.com/racmathafidz/"
+              href="#"
               type="link"
               target="_blank"
               className="flex text-lg font-light text-gray-400 hover:underline"
@@ -37,7 +35,7 @@ export default function Footer() {
               Instagram
             </Button>
             <Button
-              href="https://www.linkedin.com/in/racmat-hafidz-89982a156/"
+              href="#"
               type="link"
               target="_blank"
               className="flex text-lg font-light text-gray-400 hover:underline"
@@ -46,7 +44,7 @@ export default function Footer() {
               LinkedIn
             </Button>
             <Button
-              href="https://github.com/racmathafidz"
+              href="#"
               type="link"
               target="_blank"
               className="flex text-lg font-light text-gray-400 hover:underline"
@@ -58,7 +56,7 @@ export default function Footer() {
         </div>
         <div className="flex-col text-center mt-7">
           <p className="text-lg font-light text-gray-400">
-            Copyright 2021 - All rights reserved - VG Tech
+            Copyright {new Date().getFullYear()} - All rights reserved - VG Tech
           </p>
         </div>
       </div>
